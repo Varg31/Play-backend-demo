@@ -1,0 +1,208 @@
+2019-07-10 12:30:14,986 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-6 - 
+
+! @7celc1e8l - Internal server error, for (GET) [/] ->
+ 
+play.api.UnexpectedException: Unexpected exception[CreationException: Unable to create injector, see the following errors:
+
+1) Could not find a suitable constructor in security.CustomFilter. Classes must have either one (and only one) constructor annotated with @Inject or a zero-argument constructor that is not private.
+  at security.CustomFilter.class(CustomFilter.java:11)
+  at play.utils.Reflect$.bindingsFromConfiguration(Reflect.scala:80):
+Binding(class security.CustomFilter to self) (via modules: com.google.inject.util.Modules$OverrideModule -> play.api.inject.guice.GuiceableModuleConversions$$anon$4)
+
+1 error]
+	at play.core.server.DevServerStart$$anon$1.reload(DevServerStart.scala:214)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:144)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:304)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:189)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1261)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:523)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:409)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:606)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:485)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:581)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:749)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:764)
+	at akka.actor.Actor.aroundReceive(Actor.scala:539)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:671)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) Could not find a suitable constructor in security.CustomFilter. Classes must have either one (and only one) constructor annotated with @Inject or a zero-argument constructor that is not private.
+  at security.CustomFilter.class(CustomFilter.java:11)
+  at play.utils.Reflect$.bindingsFromConfiguration(Reflect.scala:80):
+Binding(class security.CustomFilter to self) (via modules: com.google.inject.util.Modules$OverrideModule -> play.api.inject.guice.GuiceableModuleConversions$$anon$4)
+
+1 error
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:543)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:159)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:106)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:78)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:201)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:156)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:22)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$3(DevServerStart.scala:193)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+	at play.core.server.DevServerStart$$anon$1.reload(DevServerStart.scala:185)
+	... 23 common frames omitted
+2019-07-10 12:30:47,200 [ERROR] from application in play-dev-mode-akka.actor.default-dispatcher-7 - 
+
+! @7celc1e8l - Internal server error, for (GET) [/] ->
+ 
+play.api.UnexpectedException: Unexpected exception[CreationException: Unable to create injector, see the following errors:
+
+1) Could not find a suitable constructor in security.CustomFilter. Classes must have either one (and only one) constructor annotated with @Inject or a zero-argument constructor that is not private.
+  at security.CustomFilter.class(CustomFilter.java:11)
+  at play.utils.Reflect$.bindingsFromConfiguration(Reflect.scala:80):
+Binding(class security.CustomFilter to self) (via modules: com.google.inject.util.Modules$OverrideModule -> play.api.inject.guice.GuiceableModuleConversions$$anon$4)
+
+1 error]
+	at play.core.server.DevServerStart$$anon$1.reload(DevServerStart.scala:214)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:144)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:304)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:189)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1261)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:523)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:409)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:606)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:485)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:581)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:749)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:764)
+	at akka.actor.Actor.aroundReceive(Actor.scala:539)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:537)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:671)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) Could not find a suitable constructor in security.CustomFilter. Classes must have either one (and only one) constructor annotated with @Inject or a zero-argument constructor that is not private.
+  at security.CustomFilter.class(CustomFilter.java:11)
+  at play.utils.Reflect$.bindingsFromConfiguration(Reflect.scala:80):
+Binding(class security.CustomFilter to self) (via modules: com.google.inject.util.Modules$OverrideModule -> play.api.inject.guice.GuiceableModuleConversions$$anon$4)
+
+1 error
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:543)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:159)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:106)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:78)
+	at play.api.inject.guice.GuiceBuilder.injector(GuiceInjectorBuilder.scala:201)
+	at play.api.inject.guice.GuiceApplicationBuilder.build(GuiceApplicationBuilder.scala:156)
+	at play.api.inject.guice.GuiceApplicationLoader.load(GuiceApplicationLoader.scala:22)
+	at play.core.server.DevServerStart$$anon$1.$anonfun$reload$3(DevServerStart.scala:193)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:22)
+	at play.core.server.DevServerStart$$anon$1.reload(DevServerStart.scala:185)
+	... 23 common frames omitted
+2019-07-10 12:30:50,308 [INFO] from play.api.db.DefaultDBApi in play-dev-mode-akka.actor.default-dispatcher-4 - Database [default] initialized at jdbc:postgresql://localhost/school
+2019-07-10 12:30:50,317 [INFO] from application in play-dev-mode-akka.actor.default-dispatcher-4 - Creating Pool for datasource 'default'
+2019-07-10 12:30:50,356 [INFO] from play.api.db.HikariCPConnectionPool in play-dev-mode-akka.actor.default-dispatcher-4 - datasource [default] bound to JNDI as DefaultDS
+2019-07-10 12:30:52,368 [WARN] from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-dev-mode-akka.actor.default-dispatcher-4 - SQL Warning Code: 0, SQLState: 00000
+2019-07-10 12:30:52,369 [WARN] from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-dev-mode-akka.actor.default-dispatcher-4 - drop cascades to 2 other objects
+2019-07-10 12:30:52,374 [WARN] from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-dev-mode-akka.actor.default-dispatcher-4 - SQL Warning Code: 0, SQLState: 00000
+2019-07-10 12:30:52,374 [WARN] from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-dev-mode-akka.actor.default-dispatcher-4 - drop cascades to 2 other objects
+2019-07-10 12:30:52,380 [WARN] from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-dev-mode-akka.actor.default-dispatcher-4 - SQL Warning Code: 0, SQLState: 00000
+2019-07-10 12:30:52,380 [WARN] from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-dev-mode-akka.actor.default-dispatcher-4 - drop cascades to 2 other objects
+2019-07-10 12:30:52,381 [WARN] from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-dev-mode-akka.actor.default-dispatcher-4 - SQL Warning Code: 0, SQLState: 00000
+2019-07-10 12:30:52,381 [WARN] from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-dev-mode-akka.actor.default-dispatcher-4 - constraint "fk59vnm1u44f5dtf46ie3xfcfhq" of relation "classes_has_disciplines" does not exist, skipping
+2019-07-10 12:30:52,382 [WARN] from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-dev-mode-akka.actor.default-dispatcher-4 - SQL Warning Code: 0, SQLState: 00000
+2019-07-10 12:30:52,382 [WARN] from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-dev-mode-akka.actor.default-dispatcher-4 - constraint "fk7l1rgdv6v0ep8ao2438vkw52y" of relation "classes_has_disciplines" does not exist, skipping
+2019-07-10 12:30:52,383 [WARN] from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-dev-mode-akka.actor.default-dispatcher-4 - SQL Warning Code: 0, SQLState: 00000
+2019-07-10 12:30:52,383 [WARN] from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-dev-mode-akka.actor.default-dispatcher-4 - constraint "fkbcqabxyygp9h87d4q4e8j402e" of relation "classes_has_teachers" does not exist, skipping
+2019-07-10 12:30:52,384 [WARN] from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-dev-mode-akka.actor.default-dispatcher-4 - SQL Warning Code: 0, SQLState: 00000
+2019-07-10 12:30:52,384 [WARN] from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-dev-mode-akka.actor.default-dispatcher-4 - constraint "fk82x3fq2vfdbmf2p8d6nm9t8s4" of relation "classes_has_teachers" does not exist, skipping
+2019-07-10 12:30:52,384 [WARN] from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-dev-mode-akka.actor.default-dispatcher-4 - SQL Warning Code: 0, SQLState: 00000
+2019-07-10 12:30:52,385 [WARN] from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-dev-mode-akka.actor.default-dispatcher-4 - constraint "fk96iooxuosohkve210mlvbjn4b" of relation "disciplines_has_teachers" does not exist, skipping
+2019-07-10 12:30:52,386 [WARN] from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-dev-mode-akka.actor.default-dispatcher-4 - SQL Warning Code: 0, SQLState: 00000
+2019-07-10 12:30:52,386 [WARN] from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-dev-mode-akka.actor.default-dispatcher-4 - constraint "fkprc5p4gtgwsucxsiuqfoifjf" of relation "disciplines_has_teachers" does not exist, skipping
+2019-07-10 12:30:52,730 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-4 - Application started (Dev) (no global state)
+2019-07-10 12:31:07,479 [ERROR] from play.http.JsonHttpErrorHandler in application-akka.actor.default-dispatcher-5 - 
+
+! @7celc4e3i - Internal server error, for (GET) [/students/1] ->
+
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NoResultException: No entity found for query]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:351)
+	at play.api.http.HttpErrorHandlerExceptions.throwableToUsefulException(HttpErrorHandler.scala)
+	at play.http.JsonHttpErrorHandler.throwableToUsefulException(JsonHttpErrorHandler.java:93)
+	at play.http.JsonHttpErrorHandler.onServerError(JsonHttpErrorHandler.java:67)
+	at play.core.j.JavaHttpErrorHandlerAdapter.$anonfun$onServerError$1(JavaHttpErrorHandlerAdapter.scala:24)
+	at play.core.j.JavaHelpers.$anonfun$invokeWithContext$1(JavaHelpers.scala:290)
+	at play.core.j.JavaHelpers.withContext(JavaHelpers.scala:302)
+	at play.core.j.JavaHelpers.withContext$(JavaHelpers.scala:298)
+	at play.core.j.JavaHelpers$.withContext(JavaHelpers.scala:311)
+	at play.core.j.JavaHelpers.invokeWithContext(JavaHelpers.scala:289)
+	at play.core.j.JavaHelpers.invokeWithContext$(JavaHelpers.scala:284)
+	at play.core.j.JavaHelpers$.invokeWithContext(JavaHelpers.scala:311)
+	at play.core.j.JavaHttpErrorHandlerAdapter.onServerError(JavaHttpErrorHandlerAdapter.scala:24)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:448)
+	at play.core.server.AkkaHttpServer$$anonfun$1.applyOrElse(AkkaHttpServer.scala:446)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:453)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:92)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:92)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:41)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:49)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.query.internal.AbstractProducedQuery.getSingleResult(AbstractProducedQuery.java:1579)
+	at DAO.StudentJPARepository.findById(StudentJPARepository.java:71)
+	at controllers.StudentController.getStudent(StudentController.java:32)
+	at router.Routes$$anonfun$routes$1.$anonfun$applyOrElse$8(Routes.scala:291)
+	at play.core.routing.HandlerInvokerFactory$$anon$6.resultCall(HandlerInvoker.scala:143)
+	at play.core.routing.HandlerInvokerFactory$$anon$6.resultCall(HandlerInvoker.scala:142)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$3$$anon$4$$anon$5.invocation(HandlerInvoker.scala:116)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:131)
+	at play.mvc.Action.lambda$call$0(Action.java:89)
+	at java.util.Optional.map(Optional.java:215)
+	at play.mvc.Action.call(Action.java:81)
+	at play.http.DefaultActionCreator$1.call(DefaultActionCreator.java:33)
+	at play.db.jpa.TransactionalAction.lambda$call$0(TransactionalAction.java:36)
+	at play.db.jpa.DefaultJPAApi.lambda$withTransaction$5(DefaultJPAApi.java:302)
+	at play.db.jpa.DefaultJPAApi.withTransaction(DefaultJPAApi.java:207)
+	at play.db.jpa.DefaultJPAApi.withTransaction(DefaultJPAApi.java:298)
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:35)
+	at play.core.j.JavaAction.$anonfun$apply$8(JavaAction.scala:191)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:660)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:430)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:79)
+	at play.api.libs.streams.Execution$trampoline$.execute(Execution.scala:72)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:71)
+	at scala.concurrent.impl.Promise$Transformation.submitWithValue(Promise.scala:392)
+	at scala.concurrent.impl.Promise$DefaultPromise.submitWithValue(Promise.scala:302)
+	at scala.concurrent.impl.Promise$DefaultPromise.dispatchOrAddCallbacks(Promise.scala:276)
+	at scala.concurrent.impl.Promise$DefaultPromise.map(Promise.scala:146)
+	at scala.concurrent.Future$.apply(Future.scala:660)
+	at play.core.j.JavaAction.apply(JavaAction.scala:192)
+	at play.api.mvc.Action.$anonfun$apply$2(Action.scala:98)
+	at play.api.libs.streams.StrictAccumulator.$anonfun$mapFuture$4(Accumulator.scala:184)
+	at scala.util.Try$.apply(Try.scala:212)
+	at play.api.libs.streams.StrictAccumulator.$anonfun$mapFuture$3(Accumulator.scala:184)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:85)
+	at scala.Function1.$anonfun$andThen$1(Function1.scala:85)
+	at play.api.libs.streams.StrictAccumulator.run(Accumulator.scala:219)
+	at play.core.server.AkkaHttpServer.$anonfun$runAction$4(AkkaHttpServer.scala:441)
+	at akka.http.scaladsl.util.FastFuture$.strictTransform$1(FastFuture.scala:41)
+	at akka.http.scaladsl.util.FastFuture$.$anonfun$transformWith$3(FastFuture.scala:51)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:447)
+	... 11 common frames omitted
